@@ -26,6 +26,17 @@ public class GitHubPractice{
 
 	}
 
+	public static ArrayList removeDuplicates(ArrayList<Integer> list){
+
+		for(int i = 0; i<list.size(); i++){
+			for(int j = list.size(); j<list.size(); j++){
+				if(list.get(i) == list.get(j))
+					list.remove(i);
+			}
+		}
+		return list;
+	}
+
 	public static void main(String[]args){
 
 		ArrayList<Integer> list1 = new ArrayList<>();
@@ -41,5 +52,9 @@ public class GitHubPractice{
 		System.out.println(combineLists(list1, list2));
 
 		printList(list1);
+
+		System.out.println(list1);
+
+		System.out.println(removeDuplicates(list1));
 	}
 }
