@@ -17,6 +17,15 @@ public class GitHubPractice{
 
 	}
 
+	public static void printList(ArrayList<Integer> list){
+
+		for(int i = 0; i<list.size()-1; i++){
+				System.out.print(list.get(i)+", ");
+		}
+		System.out.println(list.get(list.size()-1));
+
+	}
+
 	public static void main(String[]args){
 
 		ArrayList<Integer> list1 = new ArrayList<>();
@@ -30,5 +39,7 @@ public class GitHubPractice{
 		}
 
 		System.out.println(combineLists(list1, list2));
+
+		printList(list1);
 	}
 }
