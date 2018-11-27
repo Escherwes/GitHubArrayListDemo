@@ -22,7 +22,13 @@ public class GitHubPractice{
 		ArrayList<Integer> list1 = new ArrayList<>();
 		ArrayList<Integer> list2 = new ArrayList<>();
 
+		for(int i = 0; i<10; i++){
+			int random1 = (int)(Math.random()*10)+1;
+			int random2 = (int)(Math.random()*10)+1;
+			list1.add(random1);
+			list2.add(random2);
+		}
 
-
+		System.out.println(combineLists(list1, list2));
 	}
 }
